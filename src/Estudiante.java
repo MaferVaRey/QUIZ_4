@@ -75,7 +75,7 @@ public class Estudiante {
      *
      * Complejidad temporal: O(1) Complejidad constante
      */
-    public double Promedio(double notaMateria1, double notaMateria2, double notaMateria3) {
+    public double getPromedio(double notaMateria1, double notaMateria2, double notaMateria3) {
         return (notaMateria1 + notaMateria2 + notaMateria3) / 3;
     }
 
@@ -100,7 +100,7 @@ public class Estudiante {
      *
      * Complejidad temporal: O(1) Complejidad constante
      */
-    public int calcularEdad(LocalDate fechaNacimiento) {
+    public int getEdad(LocalDate fechaNacimiento) {
         LocalDate fechaActual = LocalDate.now();
         Period periodo = Period.between(fechaNacimiento, fechaActual);
         return periodo.getYears();

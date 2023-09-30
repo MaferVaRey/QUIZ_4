@@ -31,8 +31,8 @@ public class Main {
 
         Estudiante estudiante = new Estudiante(nombre, notaMateria1, notaMateria2, notaMateria3);
         fechaNacmiento = estudiante.leerFecha();
-        promedio = estudiante.Promedio(notaMateria1, notaMateria2, notaMateria3);
-        edad = estudiante.calcularEdad(fechaNacmiento);
+        promedio = estudiante.getPromedio(notaMateria1, notaMateria2, notaMateria3);
+        edad = estudiante.getEdad(fechaNacmiento);
         estudiante.imprimir(edad, promedio);
     }
 }
